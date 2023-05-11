@@ -1,0 +1,42 @@
+if (!getId) {
+        const formData = new FormData();
+        formData.append("URL", url);
+        formData.append("image", image);
+
+        axios
+          .post(
+            "https://buzzy.codderlab.com/banner?key=dH2PxQSNvJN1KGJkTQYrzTPeSLShBRLJ",
+            formData
+          )
+          .then((response) => {
+            const updateData = myData.unshift(response.data.banner);
+            setUrl(updateData);
+            setImgUpload(updateData);
+          })
+          .catch((error) => {
+            console.log("error", error);
+          });
+        toast.success("Upload Successfully", {
+          position: "top-left",
+        });
+      } else {
+        const formData = new FormData();
+        formData.append("URL", url);
+        formData.append("image", image);
+
+        axios
+          .patch(
+            https://buzzy.codderlab.com/banner/${getId}?key=dH2PxQSNvJN1KGJkTQYrzTPeSLShBRLJ,
+            formData
+          )
+          .then((response) => {
+            console.log("response", response.data.banner);
+            get();
+          })
+          .catch((error) => {
+            console.log("error", error);
+          });
+        toast.success("Update Successfully", {
+          position: "top-right",
+        });
+      }

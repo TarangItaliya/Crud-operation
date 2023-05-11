@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(6, 6, 36);
+  color: rgb(178, 178, 178);
+}
+th,
+td {
+  padding: 20px;
+}
+h1 {
+  margin-left: 60px;
+}
+table {
+  width: 90%;
+  text-align: center;
+  margin-top: 50px;
+  background-color:rgb(26, 26, 52);
+}
+.main_table{
+    display: flex;
+    justify-content: center;
+}
+.all_raw .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.all_raw .image {
+  width: 50px;
+  padding: 5px;
+  border-radius: 5px;
+}
+button {
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: black;
+}
+.edit button {
+  background-image: linear-gradient(
+    to right,
+    #fbc2eb 0%,
+    #a6c1ee 51%,
+    #fbc2eb 100%
+  );
+}
+.delete button {
+  background-image: linear-gradient(
+    to right,
+    #84fab0 0%,
+    #8fd3f4 51%,
+    #84fab0 100%
+  );
+}
+
+.add button {
+  background-image: linear-gradient(
+    to right,
+    #1fa2ff 0%,
+     #91cef9 100%
+  );
+  padding: 10px 35px;
+  margin-left: 70px;
+  margin-top: 50px;
+  color: white;
+}
+i{
+    margin-right: 5px;
+}
+/* ############ DIALOG */
+
+input{
+  background-color: rgb(2, 2, 21);
+  width: 100%;
+  border-radius: 10px;
+  height: 50px;
+  color: #ffffff;
+  border: none;
+}
+.all_input{
+  margin-top: 20px;
+}
+.banner_image{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.error{
+  color: red;
+  font-size: 14px;
+}
+.dialog{
+  background-color: rgb(6, 6, 36);
+  color: white;
+}
+.submit{
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #1fa2ff ;
+  color: white;
+}
+.cancle{
+  margin-bottom: 20px;
+  background-color: gray;
+}
+.selected_img{
+  width: 100px;
+}
+.edit_data{
+  z-index: 1;
+  background-color: rgb(26, 26, 52);
+  margin-top: -250px;
+  width: 350px;
+  text-align: center;
+  left: 50%;
+  position: absolute;
+  transform: translateX(calc(-50%));
+  padding: 20px;
+  box-shadow: 1px 3px 10px rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.edit_data input{
+  margin-top: 30px;
+  background-color: rgb(242, 233, 233);
+  color: black;
+}
+.edit_data button{
+  margin: 30px;
+}
+.edit_data .update{
+  background-color: #1fa2ff;
+  color: white;
+}
